@@ -1,0 +1,30 @@
+{
+  "name": "a05-ricop14",
+  "version": "1.0.0",
+  "description": "For this assignment, you will want to copy your code from a04 into this new repository. The completed a04 code is the starting point.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npx browser-sync start -sw",
+    "server": "node server.js",
+    "start": "concurrently --kill-others 'npm run client' 'npm run server'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdmar3-comp426/a05-ricop14.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdmar3-comp426/a05-ricop14/issues"
+  },
+  "homepage": "https://github.com/jdmar3-comp426/a05-ricop14#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.4.5",
+    "browser-sync": "^2.27.7",
+    "concurrently": "^6.4.0",
+    "express": "^4.17.1",
+    "md5": "^2.3.0"
+  },
+  "proxy": "http://localhost:8080"
+}
